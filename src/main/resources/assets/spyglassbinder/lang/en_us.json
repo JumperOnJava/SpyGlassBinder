@@ -1,0 +1,4 @@
+{
+  "sgbind.bind" : "Activate spyglass",
+  "sgbind.nospyglass" : "No spyglass found in inventory"
+}
