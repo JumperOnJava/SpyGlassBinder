@@ -34,7 +34,7 @@ public class SpyGlassBinder implements ClientModInitializer {
 			}
 			ref.pressedPrevTick = spykb.isPressed();
 
-			client.options.useKey.setPressed(spyglassActive);
+
 		});
 	}
 
@@ -55,6 +55,7 @@ public class SpyGlassBinder implements ClientModInitializer {
 		if(onPressSlot!=spyglassSlot){
 			swap(onPressSlot,spyglassSlot,client);
 		}
+		client.options.useKey.setPressed(spyglassActive);
 	}
 
 	public void onKeyUp(){
@@ -64,6 +65,8 @@ public class SpyGlassBinder implements ClientModInitializer {
 		if(onPressSlot!=spyglassSlot) {
 			swap(onPressSlot,spyglassSlot,client);
 		}
+
+		client.options.useKey.setPressed(spyglassActive);
 	}
 
 	private int findSpyglass(){
