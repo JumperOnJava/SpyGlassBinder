@@ -19,9 +19,6 @@
 			"io.github.jumperonjava.spyglassbinder.SpyGlassBinder"
 		]
 	},
-	"mixins": [
-		"spyglassbinder.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.14.0",
 		"java": ">=17",
